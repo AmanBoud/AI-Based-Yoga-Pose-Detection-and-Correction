@@ -1,15 +1,36 @@
-requirements
-    Flutter 3.23.0-13.0.pre.301 • channel main • https://github.com/flutter/flutter.git
-    Framework • revision 27b961673a (3 weeks ago) • 2024-06-24 14:16:13 +0800
-    Engine • revision 33415c6ee7
-    Tools • Dart 3.5.0 (build 3.5.0-288.0.dev) • DevTools 2.36.0
+# 🧘‍♀️ AI-Based Yoga Pose Detection and Correction (Yoga Mithra)
 
-command: flutter pub get
+This project is a smart yoga assistant that uses AI to detect and correct yoga poses in real time. The system recommends appropriate asanas based on the user’s physical discomfort and ensures they are performed with correct posture.
 
-connect mobile phone with USB debugging enabled,
-update <ip> section in yoga_mithra/lib/Views/components/Generic/API_Call.dart
+---
 
-//make sure your device is connected to the system and USB debugging is enabled in it
-run the application
-commands:
-    flutter run
+## 🎯 Objective
+
+To provide users with a guided yoga experience by:
+- Suggesting yoga asanas based on body pain inputs
+- Detecting real-time poses using computer vision
+- Providing corrections using AI models
+
+---
+
+## 🛠️ Tech Stack
+
+| Component       | Technology                      |
+|----------------|----------------------------------|
+| Frontend        | Flutter (Android only)          |
+| Pose Detection  | MediaPipe Holistic / BlazePose  |
+| AI Model        | Random Forest Classifier        |
+| Backend         | Python (for model training)     |
+| Data Storage    | Local JSON / Firebase (optional)|
+
+---
+
+## 📱 Features
+
+- Real-time yoga pose detection via camera  
+- Intelligent feedback and correction system  
+- Suggests yoga asanas for specific pain points (e.g., back, neck)  
+- Lightweight and works offline (no server required)
+
+
+
